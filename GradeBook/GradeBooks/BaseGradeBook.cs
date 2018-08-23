@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Reflection;
+//for Evidence object
+
 
 namespace GradeBook.GradeBooks
 {
@@ -13,6 +16,8 @@ namespace GradeBook.GradeBooks
     {
         public string Name { get; set; }
         public List<Student> Students { get; set; }
+
+        public GradebookType Type { get; set; }
 
         public BaseGradeBook(string name)
         {
