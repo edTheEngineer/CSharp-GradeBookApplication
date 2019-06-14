@@ -121,7 +121,7 @@ namespace GradeBook.GradeBooks
             switch (letterGrade)
             {
                 case 'A':
-                    points =4;
+                    points = 4;
                     break;
                 case 'B':
                     points = 4;
@@ -140,6 +140,8 @@ namespace GradeBook.GradeBooks
                 points += 1;
             }
             return points;
+
+        }
 
 
         public virtual void CalculateStatistics()
